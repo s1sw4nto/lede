@@ -13,6 +13,12 @@ package/feeds/.
 
 Use "make menuconfig" to configure your image.
 
+mkdir dl
+cd dl
+wget http://sources.openwrt.org/gcc-5.4.0.tar.bz2
+wget http://sources.openwrt.org/linux-4.4.71.tar.xz
+cd ../
+
 Simply running "make" will build your firmware.
 It will download all sources, build the cross-compile toolchain, 
 the kernel and all choosen applications.
